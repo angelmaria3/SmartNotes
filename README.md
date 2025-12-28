@@ -63,6 +63,12 @@ It offers a smooth, premium-like experience with a sleek light theme, image uplo
 
 ---
 
+## 🌐 Live Website
+
+🔗 **SmartNotes is live here:**  
+https://angelmaria3.github.io/SmartNotes/
+
+
 ## 📂 Installation & Setup
 
 This is a **fully client-side application**, so no server or backend is required.
