@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartNotes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="splash-screen" class="screen">
+        <h1 class="splash-logo">SmartNotes</h1>
+    </div>
+
+    <div id="home-screen" class="screen hidden">
+        <h1 class="main-title">SmartNotes</h1>
+
+        <div class="top-bar">
+            <input type="text" id="quick-title" placeholder="Enter title...">
+            <button class="add-btn" onclick="openEditor()">+</button>
+        </div>
+
+        <div id="notes-grid" class="grid-container">
+        </div>
+    </div>
+
+    <div id="editor-screen" class="screen hidden">
+        <div class="editor-header">
+            <button class="blue-btn" onclick="closeEditor()">Back</button>
+            <button class="blue-btn" onclick="saveNote()">Save</button>
+        </div>
+        <input type="text" id="note-title" placeholder="Note Title">
+        <textarea id="note-content" placeholder="Write your thoughts..."></textarea>
+
+        <div class="editor-footer">
+            <label for="image-input" class="blue-btn-label">Upload Picture</label>
+            <input type="file" id="image-input" accept="image/*" onchange="previewImage(this)">
+            <div id="edit-img-preview"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

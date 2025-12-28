@@ -1,0 +1,168 @@
+:root {
+    --primary-blue: #007bff;
+    --bg-light: #f4f7f6;
+    --border-color: #d1d8e0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg-light);
+    margin: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.screen {
+    padding: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Splash */
+#splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.splash-logo {
+    font-size: 3.5rem;
+    color: var(--primary-blue);
+    animation: fade 1.5s ease-in-out;
+}
+
+/* Home Screen */
+.main-title {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+
+.top-bar {
+    display: flex;
+    max-width: 600px;
+    margin: 30px auto;
+    gap: 10px;
+}
+
+#quick-title {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.add-btn {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Grid Boxes */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.note-box {
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.note-box:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-blue);
+}
+
+.box-img-preview {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    background: #eee;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.box-content {
+    padding: 10px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.box-content h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.box-content p {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Editor */
+.blue-btn,
+.blue-btn-label {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.editor-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#note-title {
+    width: 100%;
+    border: none;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    outline: none;
+    background: transparent;
+}
+
+#note-content {
+    width: 100%;
+    border: none;
+    flex-grow: 1;
+    font-size: 1.1rem;
+    outline: none;
+    height: 300px;
+}
+
+#edit-img-preview img {
+    max-width: 150px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+#image-input {
+    display: none;
+}
