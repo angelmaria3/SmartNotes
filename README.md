@@ -69,4 +69,4 @@ This is a **fully client-side application**, so no server or backend is required
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/smartnotes.git
+git clone https://github.com/angelmaria3/SmartNotes.git
